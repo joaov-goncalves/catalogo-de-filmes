@@ -1,10 +1,20 @@
 package br.com.monkeyfilms.catalogofilmes.modelos;
 
 public class Filme {
+	private int id;
 	private String nome;
 	private String descricao;
 	private String imagem;
-	private int nota;
+	private Double nota;
+	
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getId() {
+		return id;
+	}
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -29,10 +39,10 @@ public class Filme {
 	public String getImagem() {
 		return imagem;
 	}
-	public void getNota(int nota) {
+	public void getNota(Double nota) {
 		this.nota = nota;
 	}
-	public int setNota(int nota) {
+	public Double setNota() {
 		return nota;
 	}
 }
