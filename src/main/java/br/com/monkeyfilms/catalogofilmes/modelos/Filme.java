@@ -1,7 +1,18 @@
 package br.com.monkeyfilms.catalogofilmes.modelos;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "filmes")
 public class Filme {
+	
+	@Id
+	@GeneratedValue
 	private int id;
+	
 	private String nome;
 	private String descricao;
 	private String imagem;
